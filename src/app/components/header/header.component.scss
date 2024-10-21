@@ -1,0 +1,55 @@
+.custom-menu {
+    
+    padding: 10px;
+    .logo {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        background-color: #4f2d4b;
+        padding: 5px 10px;
+        margin-right: 10px;
+        color: #fff;
+    }
+
+    .p-menuitem-link {
+        color: #4f2d4b;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background-color: #e0e0e0;
+            color: #291e40;
+        }
+
+        .espaco {
+            margin-right: 5px;
+        }
+
+        .ml-2 {
+            margin-left: 5px;
+        }
+        
+    }
+
+    
+
+    // Estilo para o campo de pesquisa
+    input[type="text"] {
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 4px;
+        width: 12rem; // Ajuste do tamanho do campo em telas maiores
+
+        @media (max-width: 576px) {
+            display: none; // Ajuste do tamanho do campo em telas pequenas
+        }
+    }
+
+    // Badge personalizado
+    .p-badge {
+        background-color: #007ad9; // Cor do fundo do badge
+        color: white; // Cor do texto do badge
+        font-size: 0.8rem; // Tamanho do texto
+    }
+}
